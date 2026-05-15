@@ -131,9 +131,23 @@ The runner replays the prompts in `tests/evals/golden.jsonl` and checks each exp
 ├── tests/               # unit tests + eval harness
 ├── terraform/           # IaC skeleton (Lambda, API Gateway, DynamoDB, IAM)
 ├── docs/                # MkDocs Material (GitHub Pages)
-├── frontend/            # dependency-free static landing
+├── frontend/            # dependency-free static landing (Vercel)
 └── .github/workflows/   # CI + docs deploy
 ```
+
+## Automation
+
+This portfolio repo ships with automated checks for production-shaped engineering hygiene:
+
+- **Python:** Ruff, mypy, pytest.
+- **Terraform:** recursive `terraform fmt` check.
+- **Frontend:** lint, static build, and `npm audit`.
+- **Docs:** strict MkDocs build and GitHub Pages deploy.
+- **Security:** CodeQL, pip-audit, dependency review, Trivy filesystem scan, and Gitleaks secret scan.
+- **Maintenance:** Dependabot for GitHub Actions, Python dependencies, and frontend dependencies.
+- **Vercel:** preview deploys for PRs and production deploys from `main` when Vercel secrets are configured.
+
+See [OPERATIONS.md](OPERATIONS.md) for the full workflow and required secrets.
 
 ## Roadmap
 

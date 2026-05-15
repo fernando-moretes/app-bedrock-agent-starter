@@ -26,3 +26,5 @@
 - [ ] Docs updated if behavior or interface changed
 - [ ] Evals updated if model/tool behavior changed
 - [ ] CHANGELOG updated under `Unreleased`
+- [ ] Frontend/security workflows pass when touched
+- [ ] No secrets, credentials, or generated build artifacts committed
