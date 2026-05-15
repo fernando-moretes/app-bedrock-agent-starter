@@ -1,0 +1,10 @@
+{
+  "name": "bedrock-agent-starter-landing",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "lint": "node scripts/lint.mjs",
+    "dev": "python3 -m http.server 3000 --directory public"
+  }
+}
