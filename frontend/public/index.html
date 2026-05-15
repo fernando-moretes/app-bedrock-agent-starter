@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Production-shaped starter template for AI agents on Amazon Bedrock."
+    />
+    <title>bedrock-agent-starter</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main>
+      <section class="hero">
+        <div class="hero__content">
+          <p class="eyebrow">Amazon Bedrock agent starter</p>
+          <h1>bedrock-agent-starter</h1>
+          <p class="lede">
+            A production-shaped starter for AI agents on AWS: tool use, memory,
+            observability, evals, Lambda deployment, and Terraform in one readable repo.
+          </p>
+          <div class="actions">
+            <a class="button button--primary" href="https://github.com/fernandofatech/bedrock-agent-starter">
+              View repository
+            </a>
+            <a class="button" href="https://fernandofatech.github.io/bedrock-agent-starter/">
+              Read docs
+            </a>
+          </div>
+        </div>
+        <div class="terminal" aria-label="Agent CLI example">
+          <div class="terminal__bar">
+            <span></span><span></span><span></span>
+          </div>
+          <pre><code>$ agent chat
+> check Tokyo time and calculate 123 * 456 - 789
+
+tool:get_time tz=Asia/Tokyo
+tool:calculator expression=(123 * 456) - 789
+
+It is 22:41 in Tokyo. The calculation result is 55299.</code></pre>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section__header">
+          <p class="eyebrow">Runtime capabilities</p>
+          <h2>Designed for the jump from PoC to production conversation.</h2>
+        </div>
+        <div class="grid">
+          <article>
+            <h3>Converse API loop</h3>
+            <p>Multi-round tool use across Bedrock-compatible models with predictable state handling.</p>
+          </article>
+          <article>
+            <h3>Tool registry</h3>
+            <p>Typed Python functions become model-callable tools through a tiny decorator pattern.</p>
+          </article>
+          <article>
+            <h3>Memory</h3>
+            <p>In-memory sessions locally and DynamoDB-backed persistence for the Lambda runtime.</p>
+          </article>
+          <article>
+            <h3>Observability</h3>
+            <p>Structured logs and CloudWatch EMF metrics for latency, token usage, and tool calls.</p>
+          </article>
+          <article>
+            <h3>Infrastructure</h3>
+            <p>Terraform skeleton for Lambda, API Gateway, DynamoDB, IAM, and CloudWatch logs.</p>
+          </article>
+          <article>
+            <h3>Evals</h3>
+            <p>Golden-file regression tests that keep important agent behavior from drifting silently.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="flow">
+        <p>Client</p>
+        <p>API Gateway</p>
+        <p>Lambda</p>
+        <p>Agent loop</p>
+        <p>Bedrock</p>
+        <p>Tools</p>
+        <p>DynamoDB</p>
+      </section>
+
+      <section class="section section--split">
+        <div>
+          <p class="eyebrow">Quickstart</p>
+          <h2>Clone, configure a model, and run the agent locally.</h2>
+        </div>
+        <pre class="snippet"><code>git clone git@github.com:fernandofatech/bedrock-agent-starter.git
+cd bedrock-agent-starter
+pip install -e ".[dev]"
+export AWS_REGION=us-east-1
+export BEDROCK_MODEL_ID=anthropic.claude-3-5-sonnet-20241022-v2:0
+agent chat</code></pre>
+      </section>
+    </main>
+  </body>
+</html>
