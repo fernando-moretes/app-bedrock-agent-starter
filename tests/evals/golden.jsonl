@@ -1,0 +1,5 @@
+{"name": "calc-basic", "prompt": "what is 2 + 2?", "must_contain": ["4"], "must_call_tools": ["calculator"]}
+{"name": "calc-complex", "prompt": "compute (123 * 456) - 789 and show the number", "must_contain": ["55299"], "must_call_tools": ["calculator"]}
+{"name": "time-utc", "prompt": "give me the current UTC time", "must_contain": ["T"], "must_call_tools": ["get_time"]}
+{"name": "time-tokyo", "prompt": "what time is it in Tokyo right now?", "must_contain": ["+09:00"], "must_call_tools": ["get_time"]}
+{"name": "no-tool-needed", "prompt": "what is the capital of France?", "must_contain": ["Paris"], "must_not_call_tools": ["calculator", "get_time"]}
