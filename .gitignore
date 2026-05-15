@@ -1,0 +1,39 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+.venv/
+venv/
+.env
+.env.local
+
+build/
+dist/
+*.zip
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+!example.tfvars
+crash.log
+
+# MkDocs
+site/
+
+# Node
+node_modules/
+.next/
+.vercel
+*.log
+
+# OS / IDE
+.DS_Store
+.vscode/
+.idea/
