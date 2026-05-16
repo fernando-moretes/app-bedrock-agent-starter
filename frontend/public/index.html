@@ -1,103 +1,122 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="Production-shaped starter template for AI agents on Amazon Bedrock."
-    />
-    <title>bedrock-agent-starter</title>
+    <meta name="description" content="Starter profissional para agentes com Amazon Bedrock, Lambda, Terraform, avaliacao, seguranca e pipeline DevSecOps. Professional starter for Amazon Bedrock agents with Lambda, Terraform, evaluation hooks, security controls, and DevSecOps pipelines." />
+    <meta name="keywords" content="Amazon Bedrock, Agents, AWS Lambda, Terraform, AI evaluation, DevSecOps, Fernando Francisco Azevedo, moretes.com, arquitetura de solucoes" />
+    <meta name="author" content="Fernando Francisco Azevedo" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <link rel="canonical" href="https://bedrock-agent.moretes.com/" />
+    <link rel="alternate" hreflang="pt-BR" href="https://bedrock-agent.moretes.com/#pt" />
+    <link rel="alternate" hreflang="en" href="https://bedrock-agent.moretes.com/#en" />
+    <link rel="me" href="https://www.linkedin.com/in/fernando-francisco-azevedo/" />
+    <link rel="me" href="https://github.com/fernandofatech" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Fernando Moretes Architecture Portfolio" />
+    <meta property="og:title" content="Bedrock Agent Starter | Fernando Moretes" />
+    <meta property="og:description" content="Starter profissional para agentes com Amazon Bedrock, Lambda, Terraform, avaliacao, seguranca e pipeline DevSecOps. Professional starter for Amazon Bedrock agents with Lambda, Terraform, evaluation hooks, security controls, and DevSecOps pipelines." />
+    <meta property="og:url" content="https://bedrock-agent.moretes.com/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Bedrock Agent Starter | Fernando Moretes" />
+    <meta name="twitter:description" content="Starter profissional para agentes com Amazon Bedrock, Lambda, Terraform, avaliacao, seguranca e pipeline DevSecOps. Professional starter for Amazon Bedrock agents with Lambda, Terraform, evaluation hooks, security controls, and DevSecOps pipelines." />
+    <title>Bedrock Agent Starter | Fernando Moretes</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <main>
-      <section class="hero">
-        <div class="hero__content">
-          <p class="eyebrow">Amazon Bedrock agent starter</p>
-          <h1>bedrock-agent-starter</h1>
-          <p class="lede">
-            A production-shaped starter for AI agents on AWS: tool use, memory,
-            observability, evals, Lambda deployment, and Terraform in one readable repo.
-          </p>
-          <div class="actions">
-            <a class="button button--primary" href="https://github.com/fernandofatech/bedrock-agent-starter">
-              View repository
-            </a>
-            <a class="button" href="https://fernandofatech.github.io/bedrock-agent-starter/">
-              Read docs
-            </a>
+    <div class="shell">
+      <nav class="nav" aria-label="Principal">
+        <a class="brand" href="https://fernando.moretes.com">Fernando Moretes</a>
+        <div class="nav__links">
+          <a href="https://github.com/fernandofatech/bedrock-agent-starter">GitHub</a>
+          <a href="https://www.linkedin.com/in/fernando-francisco-azevedo/">LinkedIn</a>
+          <a href="https://fernando.moretes.com">Portfolio</a>
+        </div>
+      </nav>
+
+      <main>
+        <section class="hero">
+          <div>
+            <p class="eyebrow">Amazon Bedrock Agents / Starter Kit</p>
+            <h1>Bedrock Agent Starter</h1>
+            <p class="lead">Starter profissional para agentes com Amazon Bedrock, Lambda, Terraform, avaliacao, seguranca e pipeline DevSecOps.</p>
+            <div class="lang-grid" aria-label="Resumo bilingue">
+              <article id="pt" class="lang-card">
+                <strong>Português</strong>
+                <p>Starter profissional para agentes com Amazon Bedrock, Lambda, Terraform, avaliacao, seguranca e pipeline DevSecOps.</p>
+              </article>
+              <article id="en" class="lang-card">
+                <strong>English</strong>
+                <p>Professional starter for Amazon Bedrock agents with Lambda, Terraform, evaluation hooks, security controls, and DevSecOps pipelines.</p>
+              </article>
+            </div>
+            <div class="actions">
+              <a class="button button--primary" href="https://github.com/fernandofatech/bedrock-agent-starter">Ver repositório / View repo</a>
+              <a class="button" href="https://fernandofatech.github.io/bedrock-agent-starter/">Documentação / Docs</a>
+              <a class="button" href="https://fernando.moretes.com">Perfil profissional</a>
+            </div>
           </div>
-        </div>
-        <div class="terminal" aria-label="Agent CLI example">
-          <div class="terminal__bar">
-            <span></span><span></span><span></span>
+          <aside class="panel" aria-label="Sinais de portfolio">
+            <p class="panel__label">Portfolio signal</p>
+            <strong>PoC publica para arquitetura de soluções, AWS, IA e engenharia DevSecOps.</strong>
+            <ul>
+              <li>Bedrock Agents</li>
+              <li>Lambda tools</li>
+              <li>Terraform</li>
+              <li>Evaluation</li>
+              <li>Guardrails</li>
+              <li>CI/CD</li>
+            </ul>
+          </aside>
+        </section>
+
+        <section class="section" aria-labelledby="focus-title">
+          <div class="section__head">
+            <h2 id="focus-title">Arquitetura que mostra pensamento de solução.</h2>
+            <p>Conteúdo desenhado para entrevistas, discovery técnico, revisão executiva e demonstração prática de boas práticas em cloud e IA.</p>
           </div>
-          <pre><code>$ agent chat
-> check Tokyo time and calculate 123 * 456 - 789
+          <div class="cards">
+            <article class="card">
+              <span>01</span>
+              <h3>Agent runtime</h3>
+              <p>Estrutura para tools Lambda, schemas Pydantic e execucao controlada.</p>
+            </article>
+            <article class="card">
+              <span>02</span>
+              <h3>Infra como codigo</h3>
+              <p>Skeleton Terraform para ambientes repetiveis e boas praticas AWS.</p>
+            </article>
+            <article class="card">
+              <span>03</span>
+              <h3>Qualidade e seguranca</h3>
+              <p>Testes, auditoria de dependencias e checklist operacional para evolucao segura.</p>
+            </article>
+          </div>
+        </section>
 
-tool:get_time tz=Asia/Tokyo
-tool:calculator expression=(123 * 456) - 789
+        <section class="section" aria-labelledby="proof-title">
+          <div class="section__head">
+            <h2 id="proof-title">Evidências técnicas / Technical proof</h2>
+            <p>Projetos com documentação, automação, testes e superfície pública pronta para avaliação rápida por recrutadores, líderes técnicos e times de arquitetura.</p>
+          </div>
+          <ul class="proof">
+            <li>Bedrock</li>
+            <li>Lambda</li>
+            <li>Terraform</li>
+            <li>pytest</li>
+            <li>pip-audit</li>
+          </ul>
+        </section>
+      </main>
 
-It is 22:41 in Tokyo. The calculation result is 55299.</code></pre>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="section__header">
-          <p class="eyebrow">Runtime capabilities</p>
-          <h2>Designed for the jump from PoC to production conversation.</h2>
-        </div>
-        <div class="grid">
-          <article>
-            <h3>Converse API loop</h3>
-            <p>Multi-round tool use across Bedrock-compatible models with predictable state handling.</p>
-          </article>
-          <article>
-            <h3>Tool registry</h3>
-            <p>Typed Python functions become model-callable tools through a tiny decorator pattern.</p>
-          </article>
-          <article>
-            <h3>Memory</h3>
-            <p>In-memory sessions locally and DynamoDB-backed persistence for the Lambda runtime.</p>
-          </article>
-          <article>
-            <h3>Observability</h3>
-            <p>Structured logs and CloudWatch EMF metrics for latency, token usage, and tool calls.</p>
-          </article>
-          <article>
-            <h3>Infrastructure</h3>
-            <p>Terraform skeleton for Lambda, API Gateway, DynamoDB, IAM, and CloudWatch logs.</p>
-          </article>
-          <article>
-            <h3>Evals</h3>
-            <p>Golden-file regression tests that keep important agent behavior from drifting silently.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="flow">
-        <p>Client</p>
-        <p>API Gateway</p>
-        <p>Lambda</p>
-        <p>Agent loop</p>
-        <p>Bedrock</p>
-        <p>Tools</p>
-        <p>DynamoDB</p>
-      </section>
-
-      <section class="section section--split">
-        <div>
-          <p class="eyebrow">Quickstart</p>
-          <h2>Clone, configure a model, and run the agent locally.</h2>
-        </div>
-        <pre class="snippet"><code>git clone git@github.com:fernandofatech/bedrock-agent-starter.git
-cd bedrock-agent-starter
-pip install -e ".[dev]"
-export AWS_REGION=us-east-1
-export BEDROCK_MODEL_ID=anthropic.claude-3-5-sonnet-20241022-v2:0
-agent chat</code></pre>
-      </section>
-    </main>
+      <footer class="footer">
+        <p>
+          Fernando Francisco Azevedo ·
+          <a href="https://www.linkedin.com/in/fernando-francisco-azevedo/">LinkedIn</a> ·
+          <a href="https://github.com/fernandofatech">GitHub</a> ·
+          <a href="https://fernando.moretes.com">fernando.moretes.com</a>
+        </p>
+      </footer>
+    </div>
   </body>
 </html>

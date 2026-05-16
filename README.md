@@ -21,6 +21,17 @@
 
 ---
 
+## Live portfolio / Portfolio ao vivo
+
+- **Production:** [Bedrock Agent Starter](https://bedrock-agent.moretes.com)
+- **Documentation:** [Project docs](https://fernandofatech.github.io/bedrock-agent-starter/)
+- **GitHub:** [fernandofatech/bedrock-agent-starter](https://github.com/fernandofatech/bedrock-agent-starter)
+- **Author:** [Fernando Francisco Azevedo](https://fernando.moretes.com) · [LinkedIn](https://www.linkedin.com/in/fernando-francisco-azevedo/) · [GitHub](https://github.com/fernandofatech)
+
+This public repository is part of a bilingual portfolio focused on solution architecture, AWS, AI, MCP/tooling, DevSecOps, and production-ready engineering practices.
+
+Este repositório público faz parte de um portfólio bilíngue focado em arquitetura de soluções, AWS, IA, MCP/tools, DevSecOps e boas práticas de engenharia para produção.
+
 ## Why this exists
 
 Bedrock makes it easy to *call a model*. It does not make it easy to ship a real agent: tool registry, multi-turn memory, structured observability, eval harness, IaC, error handling, prompt caching, model fallbacks — all yours to wire up.
@@ -145,7 +156,7 @@ This portfolio repo ships with automated checks for production-shaped engineerin
 - **Docs:** strict MkDocs build and GitHub Pages deploy.
 - **Security:** CodeQL, pip-audit, dependency review, Trivy filesystem scan, and Gitleaks secret scan.
 - **Maintenance:** Dependabot for GitHub Actions, Python dependencies, and frontend dependencies.
-- **Vercel:** preview deploys for PRs and production deploys from `main` when Vercel secrets are configured.
+- **Vercel:** automatic preview and production deploys are connected through Vercel Git integration.
 
 See [OPERATIONS.md](OPERATIONS.md) for the full workflow and required secrets.
 
