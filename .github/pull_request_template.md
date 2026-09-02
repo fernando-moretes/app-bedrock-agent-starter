@@ -1,30 +1,17 @@
-## Summary
+## O que muda
 
-<!-- One or two sentences describing the change. Link related issues. -->
+<!-- Uma frase. O título do PR já segue Conventional Commits. -->
 
-## Type of change
+## Por quê
 
-- [ ] feat - new agent capability, tool, memory backend, or deployment surface
-- [ ] fix - bug fix
-- [ ] docs - documentation only
-- [ ] refactor - internal change with no behavior difference
-- [ ] test - adding or fixing tests/evals
-- [ ] chore - build, CI, deps
+<!-- O motivo, não a implementação. Isto é o que alguém vai querer saber daqui a seis meses. -->
 
-## Test plan
+## Como verificar
 
-<!-- How did you verify this change? Add commands and outcomes. -->
+<!-- Os passos para conferir que funciona. -->
 
-- [ ] `ruff check . && ruff format --check .`
-- [ ] `mypy src`
-- [ ] `pytest -v`
+---
 
-## Checklist
-
-- [ ] Title follows [Conventional Commits](https://www.conventionalcommits.org)
-- [ ] Target branch is `develop` (or `main` only for hotfixes/releases)
-- [ ] Docs updated if behavior or interface changed
-- [ ] Evals updated if model/tool behavior changed
-- [ ] CHANGELOG updated under `Unreleased`
-- [ ] Frontend/security workflows pass when touched
-- [ ] No secrets, credentials, or generated build artifacts committed
+- [ ] Título segue `<tipo>: <descrição em minúscula>`
+- [ ] Branch segue `<tipo>/<escopo>`
+- [ ] Testado localmente
